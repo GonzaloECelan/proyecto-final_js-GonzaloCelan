@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+.span{
+    text-align: center;
+    height: 25px;
+    background-color: black;
+    padding-top: 2px;
+    color:white;
+    
+}
+
+header{
+    display:flex ;
+    justify-content: space-around;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.logo{
+    width: 150px;
+    height: 80px;
+    margin-left: -100px;
+}
+
+.logo img{
+    width: 150px;
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    color: black;
+   
+}
+
+ul li{
+    margin-top: 30px;
+    padding-left: 30px;
+    color: black;
+    
+    
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Eczar', serif;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+
+
+.icono {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-right: -100px;
+    
+    
+    
+}
+
+.icono a{
+    padding-left: 20px;
+    color: black;
+}
+
+
+
+.banner{
+    width: 100%;
+    height: 800px;
+}
+.banner img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+
+.contenedor-general{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-left: 400px;
+    margin-top: 100px;
+    
+    
+    
+
+    
+    
+}
+.contenedor-general2{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-left: 400px;
+    margin-top: -5px;
+    
+
+}
+.contenedor-general3{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-left: 400px;
+    margin-top: -5px;
+    margin-bottom: 200px;
+
+}
+.contenedor{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 1.0em rgba(6, 6, 6, 0.246);
+    width: 250px;
+    height: 410px;
+    margin: 20px;
+    
+
+    
+}
+
+.contenedor .imagen{
+    width: 210px;
+    height: 210px;
+    box-shadow: 0 0 1.0em rgba(42, 42, 42, 0.4);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+    
+    
+    
+    
+    
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    
+}
+
+.datos{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    width: 230px;
+}
+.datos span{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.datos .descripcion{
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+
+.datos .btn{
+    font-family: 'Eczar', serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: unset;
+    text-align: center;
+    color: #212121;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0);
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: all 250ms;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.datos .btn:hover{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    box-shadow: 4px 8px 19px 3px rgba(0,0,0,0.27);
+} 
+
+
+
+
+/* estilos slider */
+
+.contenedor-slider{
+    width: 1400px;
+    max-height: 400px;
+    overflow: hidden;
+    margin: auto;
+    
+    box-shadow: 0 0 1.5em rgba(6, 6, 6, 0.4);
+}
+
+.slider{
+    display: flex;
+    width: 500%;
+    height: 100%;
+    margin-left: -100%;
+
+}
+
+.slider-seccion{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.slider-img{
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+}
+
+.slider_btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: monospace;
+    color: rgba(0, 0, 0, 0.418);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.085);
+    border-radius: 50%;
+    margin-top: 190px;
+    box-shadow: 0 0 1.5em rgba(6, 6, 6, 0.4);
+    
+   
+}
+.slider_btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.slider_btn-r{
+    right: 30px;
+    padding-left: 15px;
+}
+.slider_btn-l{
+    left: 30px;
+    padding-left: 15px;
+}
+
+
+.slider2{
+    width: 100%;
+    height: 500px;
+    margin-top: -100px;
+}
+
+.slider2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.tituloh2{
+    width: 100%;
+    
+    height: 50px;
+    box-shadow: 10px 1px 5px 1px rgba(6, 6, 6, 0.4);
+}
+
+.tituloh2 h2{
+    text-align: center;
+    font-family: 'Eczar', serif;
+    letter-spacing: 3px;
+    padding-top: 10px;
+    font-size: 20px;
+
+}
+
+
+
+
