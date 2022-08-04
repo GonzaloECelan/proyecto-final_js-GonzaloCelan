@@ -44,3 +44,6 @@ boton_izquierda.addEventListener("click", function(){
     moverI();
 })
 
+setInterval(function(){
+    moverD();
+}, 7000);

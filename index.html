@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
     <script src="https://kit.fontawesome.com/5bbf1ce974.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,18 +24,35 @@
 
         <nav>
             <ul>
-                <li><a href="">HOMBRE</a></li>
-                <li><a href="">MUJER</a></li>
-                <li><a href="">ACCESORIOS</a></li>
-                <li><a href="">SALE</a></li>
-                <li><a href="">INFORMACIÓN</a></li>
+                <li><a href="#">HOMBRE</a></li>
+                <li><a href="#">MUJER</a></li>
+                <li><a href="#">ACCESORIOS</a></li>
+                <li><a href="#">SALE</a></li>
+                <li><a href="#">INFORMACIÓN</a></li>
             </ul>
         </nav>
 
+
         <div class="icono">
-            <a href=""><i class="fa fa-search"></i></a>
-            <a href=""><i class="fa-solid fa-user"></i></a>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            
+            </div>
+
+            <p class="contador">0</p>
+
+            <div class="cart-products" id="products-id">
+                <p class="back">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                    
+                </div>
+                <div class="total-compra">
+                <span class="total">Total:$ <p class="price-total">0</p> </span>
+                <span class="btn-finalizarcompra">FINALIZAR COMPRA</span>
+                </div>
+            </div>
             </div>
     </header>
 
@@ -67,46 +86,46 @@
 <div class="contenedor-general">
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/reloj9.jpg" alt="">
+            <img class="img-prod" src="./banner/reloj9.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">$36.000</span>
+            <span class="precio" id="precio">36.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button  data-id="1" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/Reloj2.jpg" alt="">
+            <img class="img-prod" src="./banner/Reloj2.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">$32.000</span>
+            <span class="precio" id="precio">32.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button data-id="2" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/Reloj3.jpg" alt="">
+            <img class="img-prod" src="./banner/Reloj3.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">$50.000</span>
+            <span class="precio" id="precio">50.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button data-id="3" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/reloj4.jpg" alt="">
+            <img class="img-prod" src="./banner/reloj4.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">$55.000</span>
+            <span class="precio" id="precio">55.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button data-id="4" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
 
@@ -115,46 +134,46 @@
 <div class="contenedor-general2">
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/reloj5.jpg" alt="">
+            <img class="img-prod" id="img-" src="./banner/reloj5.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Mujer</span>
-            <span class="precio" id="precio">$30.000</span>
+            <span class="precio" id="precio">30.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button  data-id="5" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/reloj6.jpg" alt="">
+            <img class="img-prod" id="img-" src="./banner/reloj6.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Mujer</span>
-            <span class="precio" id="precio">$38.000</span>
+            <span class="precio" id="precio">38.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button data-id="6" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/reloj7.jpg">
+            <img class="img-prod" id="img-" src="./banner/reloj7.jpg">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">$38.000</span>
+            <span class="precio" id="precio">38.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button data-id="7" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/reloj8.jpg" alt="">
+            <img class="img-prod" id="img-" src="./banner/reloj8.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">$47.000</span>
+            <span class="precio" id="precio">47.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button data-id="8" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
 
@@ -163,47 +182,191 @@
 <div class="contenedor-general3">
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/reloj10.jpg" alt="">
+            <img class="img-prod" id="img-" src="./banner/reloj10.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Fossil Hombre</span>
-            <span class="precio" id="precio">$58.000</span>
+            <span class="precio" id="precio">58.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button data-id="9" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/reloj11.jpg" alt="">
+            <img class="img-prod" id="img-" src="./banner/reloj11.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Fossil Hombre</span>
-            <span class="precio" id="precio">$50.000</span>
+            <span class="precio" id="precio">50.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button data-id="10" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
         
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/reloj12.jpg">
+            <img class="img-prod" id="img-" src="./banner/reloj12.jpg">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Citzen Hombre</span>
-            <span class="precio" id="precio">$63.000</span>
+            <span class="precio" id="precio">63.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button data-id="11" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img id="img-" src="banner/reloj8.jpg" alt="">
+            <img class="img-prod" id="img-" src="./banner/reloj8.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Citzen Hombre</span>
-            <span class="precio" id="precio">$60.000</span>
+            <span class="precio" id="precio">60.000</span>
             <span class="envio">Envio Gratis</span>
-            <button class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+            <button data-id="12" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="contenedor-general4">
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/reloj13.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Guess Hombre</span>
+            <span class="precio" id="precio">36.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="13" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/reloj15.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Guess Mujer</span>
+            <span class="precio" id="precio">32.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="14" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/reloj16.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Guess Hombre</span>
+            <span class="precio" id="precio">50.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="15" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/reloj4.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
+            <span class="precio" id="precio">55.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="16" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="contenedor-general5">
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/reloj19.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Festina Hombre</span>
+            <span class="precio" id="precio">36.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="17" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/reloj20.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Festina Hombre</span>
+            <span class="precio" id="precio">32.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="18" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/reloj21.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Festina Hombre</span>
+            <span class="precio" id="precio">50.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="19" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/reloj22.png" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Festina Mujer</span>
+            <span class="precio" id="precio">55.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="20" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="contenedor-general6">
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/reloj9.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
+            <span class="precio" id="precio">36.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="21" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/Reloj2.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
+            <span class="precio" id="precio">32.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="22" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/Reloj3.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
+            <span class="precio" id="precio">50.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="23" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="imagen">
+            <img class="img-prod" src="./banner/reloj4.jpg" alt="">
+        </div>
+        <div class="datos">
+            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
+            <span class="precio" id="precio">55.000</span>
+            <span class="envio">Envio Gratis</span>
+            <button data-id="24" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
 
@@ -215,7 +378,8 @@
 
 
 
-
+   
+    <script src="js/carrito.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
 </body>
