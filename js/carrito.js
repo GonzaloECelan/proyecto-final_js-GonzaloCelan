@@ -33,7 +33,7 @@ function addproducto(e){
    
 
     if(e.target.classList.contains("btn")){
-        // console.log(e.target);
+        console.log(e.target);
         let selecproducto = e.target.parentElement;
 
         contenido(selecproducto);

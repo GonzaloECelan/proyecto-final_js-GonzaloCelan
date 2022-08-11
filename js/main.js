@@ -18,3 +18,21 @@ Swal.fire({
 
     
   })
+
+
+
+
+  // API USUARIO
+  
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'dbe1e5d82dmsh6147c2fb3f7d1fap170c87jsn1c2c0223b63d',
+    'X-RapidAPI-Host': 'random-user.p.rapidapi.com'
+	}
+};
+
+fetch('https://random-user.p.rapidapi.com/getuser', options)
+	.then(response => response.json())
+	.then(response => console.log("Compra realizada por usuario-datos:", response))
+	.catch(err => console.error(err));
