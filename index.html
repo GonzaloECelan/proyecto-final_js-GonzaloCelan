@@ -17,15 +17,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
-    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <title> Mango</title>
 </head>
 <body>
     <div class="span">
         <p>6 cuotas sin interes-envio gratis a todo el pais</p>
+    
     </div>
     <header>
         <div class="logo">
-            <img src="banner/Mango-Logo.png" alt="">
+            <h1>MANGO</h1>
         </div>
 
         <nav>
@@ -40,16 +44,22 @@
 
 
         <div class="icono">
-            <a href="#"><i class="fa fa-search"></i></a>
-            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <label for="btn-usuario"><i class="fa-solid fa-location-dot"></i></label>
+            <label for=""><i class="fa-solid fa-user"></i></label>
             <label for="btn-menu"><i class="fa-solid fa-cart-shopping"></i></label>
 
-            <!-- <input type="checkbox" id="btn-menu"> -->
+        
             </div>
 
             <p class="contador">0</p>
-            
+            <input class="usuario-input" type="checkbox" id="btn-usuario">
             <input type="checkbox" id="btn-menu">
+            
+            <div id="usuario_dt" class="dato-usuario">
+                
+
+            </div>
+            
             <div class="container-menu">
                 <div class="cont-menu">
                     <div class="cart-products" id="products-id">
@@ -62,42 +72,58 @@
                         <span class="btn-finalizarcompra">FINALIZAR COMPRA</span>
                         </div>
                     </div>
-                    <label for="btn-menu">X</label>
+                    <label class="escape" for="btn-menu">X</label>
                 </div>
             </div>
     </header>
+    
+<div class="video-portada">
+<video muted autoplay loop>
+    <source src="banner/Video producto (Promoción relojes).mp4" type="video/mp4">
+</video>
+<div class="capa">
+    <h3>Relojes de lujo</h3>
+<p>Para poder ofrecer los mejores precios de relojes de lujo, nos posicionamos en el mercado directamente para no tener que pagar altas comisiones a terceros por los anuncios y sobre las ventas de relojes.</p>
+<span>Ver mas</span>
+</div>
+</div>
+
   
-
-
-    <div class="contenedor-slider">
-        <div class="slider" id="slider">
-            <div class="slider-seccion">
-                <img class="slider-img" src="slider/banner1.jpg" alt="">
-            </div>
-            <div class="slider-seccion">
-                <img class="slider-img" src="slider/banner2.jpg" alt="">
-            </div>
-            <div class="slider-seccion">
-                <img class="slider-img" src="slider/banner3.jpg" alt="">
-            </div>
-            <div class="slider-seccion">
-                <img class="slider-img" src="slider/banner4.jpg" alt="">
-            </div>
-            <div class="slider-seccion">
-                <img class="slider-img" src="slider/banner5.jpg" alt="">
-            </div>
-
-            <span class="slider_btn slider_btn-r">&#62;</span>
-            <span class="slider_btn slider_btn-l">&#60;</span>
-
-        </div>
-    </div>
-
     
 
     <div class="tituloh2">
         <h2>Productos destacados</h2>
     </div>
+
+    <section class="tarjeta-reloj">
+        <div class="carrusel-marcas">
+            <div class="marcas-items">
+              <div class="marcas-item">
+                <img src="banner/tommy-hilfiger.png" alt="" />
+              </div>
+              <div class="marcas-item">
+                <img src="banner/citizen.png" alt="" />
+              </div>
+              <div class="marcas-item">
+                <img src="banner/fossil.png" alt="" />
+              </div>
+              <div class="marcas-item">
+                <img src="banner/logo-festina.png" alt="" />
+              </div>
+              <div class="marcas-item">
+                <img src="banner/logo-guess.jpg" alt="" />
+              </div>
+              <div class="marcas-item">
+                <img src="banner/casio-logo.png" alt="" />
+              </div>
+              <div class="marcas-item">
+                <img src="banner/SeikoLogo.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+    </section>
+
+   
 <div class="contenedor-general">
     <div class="contenedor">
         <div class="imagen">
@@ -105,7 +131,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">36.000</span>
+            <p class="precio-p">$</p><span class="precio" id="precio"> 36.000</span>
             <span class="envio">Envio Gratis</span>
             <button  data-id="1" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -116,7 +142,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">32.000</span>
+            <p class="precio-p">$</p><span class="precio" id="precio">32.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="2" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -127,7 +153,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">50.000</span>
+            <p class="precio-p">$</p><span class="precio" id="precio">50.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="3" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -138,18 +164,18 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">55.000</span>
+            <p class="precio-p">$</p><span class="precio" id="precio">55.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="4" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img class="img-prod" src="./banner/Reloj2.jpg" alt="">
+            <img class="img-prod" src="./banner/reloj25.jpg" alt="">
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">32.000</span>
+            <p class="precio-p">$</p><span class="precio" id="precio">22.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="2" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -165,7 +191,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Mujer</span>
-            <span class="precio" id="precio">30.000</span>
+            <p class="precio-p2">$</p><span class="precio" id="precio">30.000</span>
             <span class="envio">Envio Gratis</span>
             <button  data-id="5" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -176,7 +202,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Mujer</span>
-            <span class="precio" id="precio">38.000</span>
+            <p class="precio-p2">$</p><span class="precio" id="precio">38.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="6" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -186,8 +212,8 @@
             <img class="img-prod" id="img-" src="./banner/reloj7.jpg">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">38.000</span>
+            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger </span>
+            <p class="precio-p2">$</p><span class="precio" id="precio">38.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="7" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -197,19 +223,19 @@
             <img class="img-prod" id="img-" src="./banner/reloj8.jpg" alt="">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">47.000</span>
+            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger </span>
+            <p class="precio-p2">$</p><span class="precio" id="precio">47.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="8" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img class="img-prod" src="./banner/Reloj2.jpg" alt="">
+            <img class="img-prod" src="./banner/reloj26.jpg" alt="">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">32.000</span>
+            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger </span>
+            <p class="precio-p2">$</p><span class="precio" id="precio">43.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="2" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -225,7 +251,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Fossil Hombre</span>
-            <span class="precio" id="precio">58.000</span>
+            <p class="precio-p3">$</p><span class="precio" id="precio">58.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="9" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -236,7 +262,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Fossil Hombre</span>
-            <span class="precio" id="precio">50.000</span>
+            <p class="precio-p3">$</p><span class="precio" id="precio">50.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="10" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -248,7 +274,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Citzen Hombre</span>
-            <span class="precio" id="precio">63.000</span>
+            <p class="precio-p3">$</p><span class="precio" id="precio">63.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="11" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -259,18 +285,18 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Citzen Hombre</span>
-            <span class="precio" id="precio">60.000</span>
+            <p class="precio-p3">$</p><span class="precio" id="precio">60.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="12" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img class="img-prod" src="./banner/Reloj2.jpg" alt="">
+            <img class="img-prod" src="./banner/reloj22.jpg" alt="">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">32.000</span>
+            <span class="descripcion" id="descripcion">Reloj Fossil Hombre</span>
+            <p class="precio-p3">$</p><span class="precio" id="precio">64.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="2" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -286,7 +312,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Guess Hombre</span>
-            <span class="precio" id="precio">36.000</span>
+            <p class="precio-p4">$</p><span class="precio" id="precio">36.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="13" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -297,7 +323,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Guess Mujer</span>
-            <span class="precio" id="precio">32.000</span>
+            <p class="precio-p4">$</p><span class="precio" id="precio">32.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="14" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -308,7 +334,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Guess Hombre</span>
-            <span class="precio" id="precio">50.000</span>
+            <p class="precio-p4">$</p><span class="precio" id="precio">50.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="15" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -319,18 +345,18 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">55.000</span>
+            <p class="precio-p4">$</p><span class="precio" id="precio">55.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="16" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img class="img-prod" src="./banner/Reloj2.jpg" alt="">
+            <img class="img-prod" src="./banner/reloj24.jpg" alt="">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">32.000</span>
+            <span class="descripcion" id="descripcion">Reloj Guess Oasis</span>
+            <p class="precio-p4">$</p><span class="precio" id="precio">52.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="2" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -346,7 +372,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Festina Hombre</span>
-            <span class="precio" id="precio">36.000</span>
+            <p class="precio-p5">$</p><span class="precio" id="precio">36.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="17" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -357,7 +383,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Festina Hombre</span>
-            <span class="precio" id="precio">32.000</span>
+            <p class="precio-p5">$</p><span class="precio" id="precio">32.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="18" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -368,7 +394,7 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Festina Hombre</span>
-            <span class="precio" id="precio">50.000</span>
+            <p class="precio-p5">$</p><span class="precio" id="precio">50.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="19" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -379,18 +405,18 @@
         </div>
         <div class="datos">
             <span class="descripcion" id="descripcion">Reloj Festina Mujer</span>
-            <span class="precio" id="precio">55.000</span>
+            <p class="precio-p5">$</p><span class="precio" id="precio">55.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="20" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img class="img-prod" src="./banner/Reloj2.jpg" alt="">
+            <img class="img-prod" src="./banner/reloj23.jpg" alt="">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">32.000</span>
+            <span class="descripcion" id="descripcion">Reloj Festina</span>
+            <p class="precio-p5">$</p><span class="precio" id="precio">42.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="2" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -402,55 +428,55 @@
 <div class="contenedor-general6">
     <div class="contenedor">
         <div class="imagen">
-            <img class="img-prod" src="./banner/reloj9.jpg" alt="">
+            <img class="img-prod" src="slider/citizen.png" alt="">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">36.000</span>
+            <span class="descripcion" id="descripcion">Reloj Citizen Eco-Drive</span>
+            <p class="precio-p6">$</p><span class="precio" id="precio">66.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="21" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img class="img-prod" src="./banner/Reloj2.jpg" alt="">
+            <img class="img-prod" src="banner/citizen2.jpg" alt="">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">32.000</span>
+            <span class="descripcion" id="descripcion">Reloj Citizen Crono Aviator</span>
+            <p class="precio-p6">$</p><span class="precio" id="precio">62.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="22" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img class="img-prod" src="./banner/Reloj3.jpg" alt="">
+            <img class="img-prod" src="banner/citizen3.jpg" alt="">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">50.000</span>
+            <span class="descripcion" id="descripcion">Reloj Citizen Eco-Drive</span>
+            <p class="precio-p6">$</p><span class="precio" id="precio">58.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="23" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img class="img-prod" src="./banner/reloj4.jpg" alt="">
+            <img class="img-prod" src="banner/citizen4.jpg" alt="">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">55.000</span>
+            <span class="descripcion" id="descripcion">Reloj Citizen Titanium</span>
+            <p class="precio-p6">$</p><span class="precio" id="precio">60.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="24" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
     </div>
     <div class="contenedor">
         <div class="imagen">
-            <img class="img-prod" src="./banner/Reloj2.jpg" alt="">
+            <img class="img-prod" src="banner/citizen5.jpg" alt="">
         </div>
         <div class="datos">
-            <span class="descripcion" id="descripcion">Reloj Tommy Hilfiger Hombre</span>
-            <span class="precio" id="precio">32.000</span>
+            <span class="descripcion" id="descripcion">Reloj Citizen Hombre</span>
+            <p class="precio-p6">$</p><span class="precio" id="precio">55.000</span>
             <span class="envio">Envio Gratis</span>
             <button data-id="2" class="btn btn_compra" id="btn-compra">AÑADIR CARRITO</button>
         </div>
@@ -459,236 +485,37 @@
 
 </div>
 
-<div class="slider3">
-    <img src="slider/banner6.jpg" alt="">
-</div>
 
 
-<!-- <div class="slider2">
-    <div>
-        <h3>GAMA EXCLUSIVA</h3>
-    </div>
-    <div class="products_body center">
-        <div class="wrapper">
-            <div class="container">
-                <img class="top" src="banner/Tag1.jpg" alt="">
-                <div class="bottom">
-                    <div class="left">
-                        <div class="details">
-                            <h2 class="txt_products" class="descripcion" id="descripcion">Name</h2>
-                            <p class="precio" id="precio">200.000</p>
-                            <p>Envio Gratis</p>
-                        </div>
-                        <div class="buy">
-                            <a href="#">
-                                <i class="fas fa-cart-plus"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="inside">
-                <div class="icon">
-                    <i class="far fa-eye"></i>
-                </div>
-                <div class="contents">
-                    <h1>Name</h1>
-                    <p>Descriptions</p>
-                </div>
-            </div> -->
-       <!-- </div>
-
-       <div class="wrapper">
-           <div class="container">
-               <img class="top" src="banner/Tag2.jpg" alt="">
-               <div class="bottom">
-                   <div class="left">
-                       <div class="details">
-                           <h2 class="txt_products">Tag Heuer Carrera</h2>
-                           <p class="precio" id="precio">200.000</p>
-                           <p class="envio">Envio Gratis</p>
-                       </div>
-                       <div class="buy">
-                           <button data-id="2" class="btn btn_compra" id="btn-compra">
-                               <i class="fas fa-cart-plus"></i>
-                           </button>
-                       </div>
-                   </div>
-               </div>
-           </div>
-      </div> -->
-
-      <!-- <div class="wrapper">
-       <div class="container">
-           <img class="top" src="banner/Tag3.jpg" alt="">
-           <div class="bottom">
-               <div class="left">
-                   <div class="details">
-                       <h2 class="txt_products">Name</h2>
-                       <p>Sub Name</p>
-                   </div>
-                   <div class="buy">
-                       <a href="#">
-                           <i class="fas fa-cart-plus"></i>
-                       </a>
-                   </div>
-               </div>
-           </div>
-       </div> -->
-       <!-- <div class="inside">
-           <div class="icon">
-               <i class="far fa-eye"></i>
-           </div>
-           <div class="contents">
-               <h1>Name</h1>
-               <p>Descriptions</p>
-           </div>
-       </div> -->
-  <!-- </div> --> -->
-
-  <!-- <div class="wrapper">
-   <div class="container">
-       <img class="top" src="https://source.unsplash.com/random/?river,park" alt="">
-       <div class="bottom">
-           <div class="left">
-               <div class="details">
-                   <h2 class="txt_products">Name</h2>
-                   <p>Sub Name</p>
-               </div>
-               <div class="buy">
-                   <a href="#">
-                       <i class="fas fa-cart-plus"></i>
-                   </a>
-               </div>
-           </div>
-       </div>
-   </div>
-   <div class="inside">
-       <div class="icon">
-           <i class="far fa-eye"></i>
-       </div>
-       <div class="contents">
-           <h1>Name</h1>
-           <p>Descriptions</p>
-       </div>
-   </div>
-</div>
-
-<div class="wrapper">
-   <div class="container">
-       <img class="top" src="https://source.unsplash.com/random/?river,park" alt="">
-       <div class="bottom">
-           <div class="left">
-               <div class="details">
-                   <h2 class="txt_products">Name</h2>
-                   <p>Sub Name</p>
-               </div>
-               <div class="buy">
-                   <a href="#">
-                       <i class="fas fa-cart-plus"></i>
-                   </a>
-               </div>
-           </div>
-       </div>
-   </div>
-   <div class="inside">
-       <div class="icon">
-           <i class="far fa-eye"></i>
-       </div>
-       <div class="contents">
-           <h1>Name</h1>
-           <p>Descriptions</p>
-       </div>
-   </div>
-</div>
-    </div>
-    
-    </div>
-</div>
-<div class="carrusel">
-    <div class="carrusel-items">
-      <div class="carrusel-item">
-        <img src="carrusel/Citizen-logo.png" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="carrusel/Tommy-Hilfiger-Logo-.png" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="carrusel/Seiko-Logo.png" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="carrusel/Guess-Logo.png" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="carrusel/Orient_logo_PNG2.png" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="carrusel/Festina-logo.png" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="carrusel/Swatch-Logo.png" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="carrusel/Tag-Heuer-Logo-PNG.png" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="banner/reloj11.jpg" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="banner/reloj20.jpg" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="banner/reloj13.jpg" alt="" />
-      </div>
-      <div class="carrusel-item">
-        <img src="banner/reloj16.jpg" alt="" />
-      </div>
-    </div>
-  </div>
- -->
 
 
 
   <footer>
 
-    <div class="container__footer">
-        <div class="box__footer">
-            <div class="logo">
-                <img class="footer-img" src="banner/Mango-Logo.png" alt="">
-            </div>
-            <div class="terms">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
-            </div>
-        </div>
-        <div class="box__footer">
-            <h2>Soluciones</h2>
-            <a href="https://www.google.com">App Desarrollo</a>
-            <a href="#">App Marketing</a>
-            <a href="#">IOS Desarrollo</a>
-            <a href="#">Android Desarrollo</a>
-        </div>
-
-        <div class="box__footer">
-            <h2>Compañia</h2>
-            <a href="#">Acerca de</a>
-            <a href="#">Trabajos</a>
-            <a href="#">Procesos</a>
-            <a href="#">Servicios</a>              
-        </div>
-
-        <div class="box__footer">
-            <h2>Redes Sociales</h2>
-            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-        </div>
+    <div class="logo-footer">
+        <h4>MANGO</h4>
+    </div>
+    <div class="datos-footer">
+        <ul>
+            <li>Ubicación</li>
+            <li>Ayuda</li>
+            <li>Nosotros</li>
+            <li>Contacto</li>
+        </ul>
+    </div>
+    <div class="redes">
+        <ul>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
 
     </div>
 
-    <div class="box__copyright">
-        <hr>
-        <p>Todos los derechos reservados © 2022 <b>Mango</b></p>
+    <div class="derechos">
+
+        <p>Todos los derechos reservados © 2022 <b>MANGO</b></p>
     </div>
 </footer>
 

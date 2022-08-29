@@ -141,7 +141,7 @@ function cargarHTML(){
             <img src="" alt="">
             <div class="item-content">
                 <h5>${titulo}</h5>
-                <h5 class="cart-price">$${precio}</h5>
+                <h5 class="cart-price">${precio}</h5>
                 <h6>Cantidad: ${cantidad}</h6>
             </div>
             <span class="delete-product" data-id="${id}">X</span>
